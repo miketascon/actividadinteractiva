@@ -1,0 +1,195 @@
+<div *ngIf="inicio === true && intentos != 0" class=“button-container>
+  <img src="../assets/inicio.jpg" alt="" class="imagenInicio" width="100%">
+  <h1 href="" class="buttonTicket" (click)="iniciar()">COMENZAR</h1>
+</div>
+<h1  *ngIf="f10 === false" class="botonIntentos">INTENTOS {{intentos}} - PUNTOS {{puntos}}</h1>
+<div class="container" *ngIf="a === true && intentos != 0" >
+  <!-- A-->
+  <div></div>
+  <img src="../assets/cubo_mario.png" alt="" width="300px" class="centrarCubo">
+  <h1 class="centrarTitulo">¿CUALES SON LOS COLORES PRIMARIOS?</h1>
+  <div class="row">
+    <h1 (click)="primariosSi()" class="col-sm-4 botonOpcion">a. AMARILLO - AZUL - ROJO</h1>
+    <h1 (click)="primariosNo()" class="col-sm-4 botonOpcion"> b. AMARILLO - ROSA - ROJO</h1>
+    <h1 (click)="primariosNo()" class="col-sm-4 botonOpcion">c. MORADO - MARRÓN - AZUL</h1>
+  </div>
+</div>
+<div *ngIf="b === true && intentos != 0">
+  <!-- B-->
+  <img src="../assets/cubo_mario.png" alt="" width="300px" class="centrarCubo">
+  <h1 class="centrarTitulo">RESUELVE</h1>
+  <h1 class="centrarTitulo">2 + 2 + 2 + 4</h1>
+  <h1 (click)="resuelveNo()" class="botonOpcion">8</h1>
+  <h1 (click)="resuelveSi()" class="botonOpcion">10</h1>
+  <h1 (click)="resuelveNo()" class="botonOpcion">6</h1>
+</div>
+<div *ngIf="c === true && intentos != 0">
+  <img src="../assets/cubo_mario.png" alt="" width="300px" class="centrarCubo">
+  <!-- C-->
+  <h1 class="centrarTitulo">¿RESULTADO DE ESTA SUMA?</h1>
+  <img src="../assets/suma1.png" alt="" class="centrarCubo">
+  <!-- Imagen de suma e igual-->
+  <!-- Imagen respuestas correcta e incorrectas-->
+  <img src="../assets/opcioncolor1.png" (click)="colorCorrecto1()">
+  <img src="../assets/opcioncolor2.png" (click)="colorIncorrecto1()">
+  <img src="../assets/opcioncolor3.png" (click)="colorIncorrecto1()">
+</div>
+<div *ngIf="d === true && intentos != 0">
+  <img src="../assets/cubo_mario.png" alt="" width="300px" class="centrarCubo">
+  <!-- D-->
+  <h1 class="centrarTitulo">¿RESULTADO DE ESTA SUMA?</h1>
+  <img src="../assets/suma2.png" alt="" class="centrarCubo">
+  <!-- Imagen de suma e igual-->
+  <!-- Imagen respuestas correcta e incorrectas-->
+  <img src="../assets/opcioncolor1.png" (click)="colorIncorrecto2()">
+  <img src="../assets/opcioncolor2.png" (click)="colorCorrecto2()">
+  <img src="../assets/opcioncolor3.png" (click)="colorIncorrecto2()">
+</div>
+<div *ngIf="e === true && intentos != 0">
+  <img src="../assets/cubo_mario.png" alt="" width="300px" class="centrarCubo">
+  <!-- E-->
+  <h1 class="centrarTitulo">¿RESULTADO DE ESTA SUMA?</h1>
+  <img src="../assets/suma3.png" alt="" class="centrarCubo">
+  <!-- Imagen de suma e igual-->
+  <!-- Imagen respuestas correcta e incorrectas-->
+  <img src="../assets/opcioncolor1.png" (click)="colorIncorrecto3()" >
+  <img src="../assets/opcioncolor2.png" (click)="colorIncorrecto3()">
+  <img src="../assets/opcioncolor3.png" (click)="colorCorrecto3()">
+</div>
+<div *ngIf="f === true && intentos != 0">
+  <!-- F-->
+  <h1  class="centrarTitulo">CUENTA DE MENOR A MAYOR</h1>
+  <img src="../assets/cubo_mario.png" alt="" width="300px" class="centrarCubo">
+  <br>
+  <!-- Imagen respuestas correcta e incorrectas-->
+  <img src="../assets/2.png" (click)="numeroIncorrecto()"  width="300px" >
+  <img src="../assets/10.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/3.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/7.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/4.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/5.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/8.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/9.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/6.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/1.png" (click)="numeroCorrecto1()"  width="300px" >
+</div>
+<div *ngIf="f1 === true && intentos != 0">
+  <!-- F-->
+  <h1 class="centrarTitulo">CUENTA DE MENOR A MAYOR</h1>
+  <img src="../assets/cubo_mario.png" alt="" width="300px" class="centrarCubo">
+  <!-- Imagen de suma e igual-->
+  <!-- Imagen respuestas correcta e incorrectas-->
+  <img src="../assets/7.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/4.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/5.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/2.png" (click)="numeroCorrecto2()" width="300px" >
+  <img src="../assets/9.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/6.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/8.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/10.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/3.png" (click)="numeroIncorrecto()" width="300px" >
+</div>
+<div *ngIf="f2 === true && intentos != 0">
+  <!-- F-->
+  <h1 class="centrarTitulo">CUENTA DE MENOR A MAYOR</h1>
+  <img src="../assets/cubo_mario.png" alt="" width="300px" class="centrarCubo">
+  <!-- Imagen de suma e igual-->
+  <!-- Imagen respuestas correcta e incorrectas-->
+  <img src="../assets/6.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/4.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/9.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/5.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/10.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/7.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/3.png" (click)="numeroCorrecto3()" width="300px" >
+  <img src="../assets/8.png" (click)="numeroIncorrecto()" width="300px" >
+</div>
+<div *ngIf="f3 === true && intentos != 0">
+  <!-- F-->
+  <h1 class="centrarTitulo">CUENTA DE MENOR A MAYOR</h1>
+  <img src="../assets/cubo_mario.png" alt="" width="300px" class="centrarCubo">
+  <!-- Imagen de suma e igual-->
+  <!-- Imagen respuestas correcta e incorrectas-->
+  <img src="../assets/4.png" (click)="numeroCorrecto4()" width="300px" >
+  <img src="../assets/5.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/6.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/7.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/8.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/9.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/10.png" (click)="numeroIncorrecto()" width="300px" >
+</div>
+<div *ngIf="f4 === true && intentos != 0">
+  <!-- F-->
+  <h1 class="centrarTitulo">CUENTA DE MENOR A MAYOR</h1>
+  <img src="../assets/cubo_mario.png" alt="" width="300px" class="centrarCubo">
+  <!-- Imagen de suma e igual-->
+  <!-- Imagen respuestas correcta e incorrectas-->
+  <img src="../assets/10.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/7.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/5.png" (click)="numeroCorrecto5()" width="300px" >
+  <img src="../assets/6.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/9.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/8.png" (click)="numeroIncorrecto()" width="300px" >
+</div>
+<div *ngIf="f5 === true && intentos != 0">
+  <!-- F-->
+  <h1 class="centrarTitulo">CUENTA DE MENOR A MAYOR</h1>
+  <img src="../assets/cubo_mario.png" alt="" width="300px" class="centrarCubo">
+  <!-- Imagen de suma e igual-->
+  <!-- Imagen respuestas correcta e incorrectas-->
+  <img src="../assets/7.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/9.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/6.png" (click)="numeroCorrecto6()" width="300px" >
+  <img src="../assets/10.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/8.png" (click)="numeroIncorrecto()" width="300px" >
+</div>
+<div *ngIf="f6 === true && intentos != 0">
+  <!-- F-->
+  <h1 class="centrarTitulo">CUENTA DE MENOR A MAYOR</h1>
+  <img src="../assets/cubo_mario.png" alt="" width="300px" class="centrarCubo">
+  <!-- Imagen de suma e igual-->
+  <!-- Imagen respuestas correcta e incorrectas-->
+  <img src="../assets/10.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/8.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/7.png" (click)="numeroCorrecto7()" width="300px" >
+  <img src="../assets/9.png" (click)="numeroIncorrecto()" width="300px" >
+</div>
+<div *ngIf="f7 === true && intentos != 0">
+  <!-- F-->
+  <h1 class="centrarTitulo">CUENTA DE MENOR A MAYOR</h1>
+  <img src="../assets/cubo_mario.png" alt="" width="300px" class="centrarCubo">
+  <!-- Imagen de suma e igual-->
+  <!-- Imagen respuestas correcta e incorrectas-->
+  <img src="../assets/9.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/8.png" (click)="numeroCorrecto8()" width="300px" >
+  <img src="../assets/10.png" (click)="numeroIncorrecto()" width="300px" >
+</div>
+<div *ngIf="f8 === true && intentos != 0">
+  <!-- F-->
+  <h1 class="centrarTitulo">CUENTA DE MENOR A MAYOR</h1>
+  <img src="../assets/cubo_mario.png" alt="" width="300px" class="centrarCubo">
+  <!-- Imagen de suma e igual-->
+  <!-- Imagen respuestas correcta e incorrectas-->
+  <img src="../assets/10.png" (click)="numeroIncorrecto()" width="300px" >
+  <img src="../assets/9.png" (click)="numeroCorrecto9()" width="300px" >
+</div>
+<div *ngIf="f9 === true && intentos != 0">
+  <!-- F-->
+  <h1 class="centrarTitulo">CUENTA DE MENOR A MAYOR</h1>
+  <img src="../assets/cubo_mario.png" alt="" width="300px" class="centrarCubo">
+  <!-- Imagen de suma e igual-->
+  <!-- Imagen respuestas correcta e incorrectas-->
+  <img src="../assets/10.png" (click)="numeroCorrecto10()" width="300px" >
+</div>
+<div *ngIf="f10 === true" style="background-color: chartreuse;">
+  <!-- F-->
+  <img src="../assets/win.jpg" alt="" class="centrarImagen" width="80%">
+  <h1 class="botonGanar">FELICIDADES HAZ GANADO</h1>
+</div>
+<div *ngIf="intentos === 0">
+  <!-- F-->
+  <h1 class="tituloGanaste">HAZ PERDIDO</h1>
+  <!-- Imagen mario triste-->
+  <img src="../assets/princess.jpg" alt="" class="centrarImagen" width="30%">
+  <h1 (click)="reiniciar()" class="botonReinicio">VOLVER A INTENTAR</h1>
+</div>
